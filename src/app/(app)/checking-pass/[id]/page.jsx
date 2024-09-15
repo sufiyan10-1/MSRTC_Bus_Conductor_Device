@@ -162,7 +162,7 @@ useEffect(() => {
   
   } catch (error) {
     toast({
-      title: 'Faild! ',
+      title: 'Failed! ',
       description: error?.response?.data?.message || 'Something went wrong. Please try again.',
       variant: 'destructive',
     });   
@@ -189,7 +189,7 @@ const handleSelectComming = async()=>{
  
  } catch (error) {
    toast({
-     title: 'unexpected Error Occurred',
+     title: 'Failed',
      description: error?.response?.data?.message || 'Something went wrong. Please try again.',
      variant: 'destructive',
    });   
