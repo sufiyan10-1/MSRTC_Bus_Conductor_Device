@@ -162,7 +162,7 @@ useEffect(() => {
   
   } catch (error) {
     toast({
-      title: 'unexpected Error Occurred',
+      title: 'Faild! ',
       description: error?.response?.data?.message || 'Something went wrong. Please try again.',
       variant: 'destructive',
     });   
@@ -174,7 +174,7 @@ const handleSelectComming = async()=>{
     const response = await axios.post('/api/select-for-coming',{IdNumber:firstPartOfUrl, passNumber:secondPartOfUrl})
     if(!response.data){
      toast({
-       title: 'Error Occurred',
+       title: 'Failed! ',
        description: response?.data?.message || 'Something went wrong. Please try again.',
        variant: 'destructive',
      });   
